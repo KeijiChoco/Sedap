@@ -1,6 +1,6 @@
 import "./assets/tailwind.css";
 import Loading from "./components/Loading";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useParams } from "react-router-dom";
 import React, { Suspense } from "react";
 
 import GuestLayout from "./layouts/GuestLayout";
@@ -21,6 +21,10 @@ const CustomerList = React.lazy(() => import("./components/CustomerList"));
 const OrderForm = React.lazy(() => import("./components/AddOrderForm"));
 const CustomerForm = React.lazy(() => import("./components/AddCustomerForm"));
 const UserList = React.lazy(() => import("./components/UserList"));
+const Products = React.lazy(() => import("./pages/Products"));
+const ProductDetail = React.lazy(() => import("./pages/ProductDetail"))
+const {id} = useParams
+const {abc} = useParams
 
 function App() {
   return (
@@ -34,9 +38,12 @@ function App() {
           <Route path="/customerform" element={<CustomerForm />} />
           <Route path="/orderform" element={<OrderForm />} />
           <Route path="/users" element={<UserList />} />
+          <Route path="/users:abc" element={<UserList />} />
           <Route path="/review" element={<Error400 />} />
           <Route path="/about" element={<Error403 />} />
           <Route path="/contact" element={<Error404 />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetail />} /> 
           <Route path="*" element={<Error404 />} />
         </Route>
         {/* Guest Routes */}
