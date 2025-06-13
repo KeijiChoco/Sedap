@@ -1,3 +1,4 @@
+import { MdFastfood } from "react-icons/md"; 
 import { FaUserAlt } from "react-icons/fa"; 
 import { AiOutlineUser } from "react-icons/ai"; 
 import { MdPermContactCalendar } from "react-icons/md"; 
@@ -30,15 +31,28 @@ export default function ListMenu() {
                 <li>
                     <NavLink id="menu-4" to="/users" className={menuClass}><FaUserAlt className="mr-4 text-x1"/>Users</NavLink>
                 </li>
+                <li>
+                    <NavLink id="menu-9" to="/notes" className={menuClass}><FaUserAlt className="mr-4 text-x1"/>Notes</NavLink>
+                </li>
+                <li>
+                    <NavLink
+                            id="menu-4"
+                            to="/products"
+                            className={menuClass}
+                        >
+                            <MdFastfood className="mr-4 text-xl" />
+                            Products
+                    </NavLink>
+                </li>
                 <hr />
                 <li>
-                    <NavLink id="menu-4" to="/review" className={menuClass}><MdReviews className="mr-4 text-x1"/>Review</NavLink>
+                    <NavLink id="menu-6" to="/review" className={menuClass}><MdReviews className="mr-4 text-x1"/>Review</NavLink>
                 </li>
                 <li>
-                    <NavLink id="menu-5" to="/about" className={menuClass}><FcAbout className="mr-4 text-x1"/>About</NavLink>
+                    <NavLink id="menu-7" to="/about" className={menuClass}><FcAbout className="mr-4 text-x1"/>About</NavLink>
                 </li>
                 <li>
-                    <NavLink id="menu-6" to="/contact" className={menuClass}><MdPermContactCalendar className="mr-4 text-x1"/>Contact</NavLink>
+                    <NavLink id="menu-8" to="/contact" className={menuClass}><MdPermContactCalendar className="mr-4 text-x1"/>Contact</NavLink>
                 </li>
             </ul>
         </div>

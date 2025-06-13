@@ -26,7 +26,7 @@ const UserList = () => {
 
   return (
     <div className="px-4">
-      <PageHeader title="Order List" breadcrumb={["Orders", "Order List"]}>
+      <PageHeader title="User List" breadcrumb={["Users", "User List"]}>
               <button onClick={() => window.location.href = ""}className="bg-green-600 text-white px-4 py-2 rounded-lg mr-2">Add Users</button>
               <button className="bg-orange-500 text-white px-4 py-2 rounded-lg mr-2">Export</button>
               <button onClick={() => window.location.href = "/"} className="bg-gray-500 text-white px-4 py-2 rounded-lg">Kembali</button>

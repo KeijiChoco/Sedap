@@ -29,7 +29,7 @@ const CustomerList = () => {
     Silver: "text-gray-500",
     Gold: "text-yellow-600"
   };
-
+  
   return (
     <div className="px-4">
       <PageHeader title="Customer List" breadcrumb={["Customers", "Customer List"]}>

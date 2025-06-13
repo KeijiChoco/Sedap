@@ -5,8 +5,8 @@ export default function DashboardAdmin() {
     return (
         <div id="dashboard-container">
             <PageHeader
-                title="Order List"
-                breadcrumb={["Dashboard", "Order List"]}
+                title="Dashboard"
+                breadcrumb={["Dashboard"]}
             >
                 <button className="bg-hijau text-white px-4 py-2 rounded-lg">Add</button>
                 <button className="bg-orange-500 text-white px-4 py-2 rounded-lg">Export</button>
